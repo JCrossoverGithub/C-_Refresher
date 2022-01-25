@@ -19,6 +19,7 @@ int main()
 * 
 *       File 2:
 *       extern int count // Now we can reference the global variable in file 2.
+*       std::cout << "Count is " << count << std::endl;
 * 
 */
 
@@ -43,7 +44,7 @@ int main()
 
 /*
 * 
-* STORAGE CLASSES IN C++ (used for variables)
+* STORAGE CLASSES IN C++
 * 
 *   -Auto-
 *   Default storage class for LOCAL variables.
@@ -64,15 +65,48 @@ int main()
 *   In C++, when static is used on a class data member, it causes only one copy of that member to be shared by all objects of its class.
 * 
 *   -Extern-
-*   Used to give a reference of a global variable located in a different file.
+*   Used to give a reference of a global variable (visible to all files) located in a different file.
 *   Cannot be initialized, because all it contains is a pointer to the variable name at a storage location previously defined.
 *   
-*   
+*   -Mutable-
+*   Only applies to class objects.
+*   Allows member of an object to override const member function.
+*   A mutable member can be modified by a const member function.
 * 
 */
 
 
+/*
+*       Under Operators in the tutorial, take a picture of the BitWise Operators Info and save those pics to the folder (on laptop).
+*/
 
+
+/*
+* 
+* OPERATORS IN C++
+* 
+*   -SizeOf-
+*   sizeof(datatype)
+*   Returns the size of a variable.
+* 
+*   -Condition ? X:Y-
+*   Exp1 ? Exp2 : Exp3;
+*   Exp1 is evaluated. If it is true, then
+*   Exp2 is evaluated and becomes the value of the entire ? expression. 
+*   If Exp1 is false, then Exp3 is evaluated and its value becomes the value of the expression.
+* 
+*      The following code:
+*      if(y < 10) { 
+            var = 30;
+        } else {
+            var = 40;
+        }
+
+        Can be re-written as:
+        var = (y < 10) ? 30 : 40;
+* 
+* 
+*/
 
 
 
